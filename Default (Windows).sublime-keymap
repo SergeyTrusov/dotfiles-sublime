@@ -1,0 +1,4 @@
+[
+	{ "keys": ["f1"], "command": "goto_documentation" },
+	{  "keys": ["f2"], "command": "show_debug_panel" }
+]
