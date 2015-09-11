@@ -2,11 +2,15 @@
 	"in_process_packages":
 	[
 	],
+	"install_prereleases":
+	[
+	],
 	"installed_packages":
 	[
 		"AceJump",
 		"Alignment",
 		"All Autocomplete",
+		"Apex Snippets",
 		"AutoFileName",
 		"BracketHighlighter",
 		"BufferScroll",
@@ -23,6 +27,7 @@
 		"JavaScriptNext - ES6 Syntax",
 		"LineEndings",
 		"MavensMate",
+		"Modific",
 		"Package Control",
 		"SideBarEnhancements",
 		"StyleToken",

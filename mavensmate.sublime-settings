@@ -19,7 +19,6 @@ To override default MavensMate settings, modify user-specific settings (MavensMa
 	// 		"/my/super/secret/workspace"
 	// ]
 	"mm_workspace" : [
-		// "d:\\Project\\SF\\Sublime_Workspace",
 		"d:\\Project\\SF\\Sublime_Workspace\\twc",
 		"d:\\Project\\SF\\Sublime_Workspace\\wsi"
 	],
@@ -39,7 +38,7 @@ To override default MavensMate settings, modify user-specific settings (MavensMa
 	"mm_https_proxy" : "",
 
 	//set to desired Salesforce.com API version (tooling api functionality requires 27.0+)
-	"mm_api_version" : "28.0",
+	"mm_api_version" : "31.0",
 
 	//generate from https://mavensmate.herokuapp.com. used to capture high-level usage statistics for community functionality like collaboration, gamification
 	"mm_community_api_token" : "",
@@ -125,13 +124,10 @@ To override default MavensMate settings, modify user-specific settings (MavensMa
 	"mm_osx_plugin_client_app_name" : "Sublime Text 3.app",
 
 	//set to true to use the tooling api to compile apex metadata (if you're experiencing any compile issues, set this to false to use the metadata api)
-	"mm_compile_with_tooling_api" : false,
+	"mm_compile_with_tooling_api" : true,
 
 	//set to true if you want a history of your executed apex scripts in project/apex-scripts
 	"mm_log_anonymous_apex" : true,
-
-	//set to true to play notification sounds
-	"mm_play_sounds" : true,
 
 	//local server port
 	"mm_server_port" : 7777,
@@ -240,5 +236,19 @@ To override default MavensMate settings, modify user-specific settings (MavensMa
 	"mm_compare_before_deployment" : true,
 
 	//Advanced users only: if true, MavensMate will not check if your project was created using an older version of MavensMate
-	"mm_skip_legacy_check" : false
+	"mm_skip_legacy_check" : false,
+
+    // set true to play notifiation sounds
+    "mm_play_sounds" : false,
+
+    // set true to play sounds on MM events (compile successes/failures, file refreshes, code coverage updates etc)
+    "mm_play_general_sounds" : true,
+    "mm_play_success_sounds" : true,
+    "mm_play_failure_sounds" : true,
+
+    // set paths for custom MM event sounds; if empty/absent then the default will be used
+    // only .wav files allowed; Windows users should use double backslash for path: \\
+    "mm_general_sound_path" : "",
+    "mm_success_sound_path" : "",
+    "mm_failure_sound_path" : ""
 }
